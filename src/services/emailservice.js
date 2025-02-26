@@ -1,7 +1,4 @@
 import nodemailer from "nodemailer";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 export const sendReferralEmail = async (email, name, referredBy) => {
   let transporter = nodemailer.createTransport({
